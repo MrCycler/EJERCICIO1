@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EJERCICIO 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
+   
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+        <nav style="background-color:#1a237e;">
+                <ul class="left">
+                        <li><a style="font-weight:bold;">CARTAS</a></li>
+                </ul>   
+                <ul class="right">
+                        <li><a>Sign In</a></li>
+                        <li><a><i class="material-icons">account_circle</i></a></li>
+                        <li><a><i class="material-icons">shopping_cart</i></a></li>
+                         
+                </ul>   
+        </nav>
+        <nav style="background-color:#1a236a;height:65px ">
+            <div class="nav-wrapper">
+                
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li class="active"><a>OPCION 1</a></li>
+                    <li><a>OPCION 2</a></li>
+                    <li><a>OPCION 3</a></li>
+                    <li><a>OPCION 4</a></li>
+                    
+                </ul>   
+                <ul class="side-nav" id="mobile-demo">
+                    <li class="active"><a>OPCION 1</a></li>
+                    <li><a>OPCION 2</a></li>
+                    <li><a>OPCION 3</a></li>
+                    <li><a>OPCION 4</a></li>
+                </ul>
+                <a class="brand-logo" style="width:45%;height:50px;background-color:#1a236a;">                             
+                                
+                   <input  style="margin:auto;height:30px;color:#1a236a;background-color:white">
+                              
+                                
+                 </a>
+                 <ul class="right" style="width:18%;">
+                        <li><a style="background-color:#ffb300;color:#1a236a"><i class="material-icons">search</i></a></li>
+                      
+                </ul> 
+                                
+            </div>
+    </nav>
+  
+    <div class="card-deck" style="display: flex">
+        <div class="card">
+          <img class="card-img-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEU7WZj///9DYJxAXptJZZ83VZb3+PspTJGYpccxUZNIYp2/yd3d4uxjeavY3ek9XJtQbKUmSY/r7vXK0uOgrsyqttGLm7/S2ed6jbceRI0yUpfb4Od0h7BmfKxbdKjz9fe5w9KElrXH0Nl9kLSvutO6xNlfeaauuszO1t2Oobvo6/Nacqhxhq5lfahwhrWJmsCZqcDpXmosAAAEu0lEQVR4nO3dW3+aMBjH8aAEiKeheMSprYfOanV7/69u2Nb1Yg4eiYE82f93sd2ske8nQEShE95n819vse9K8el1foWJ9z+D9VuaSuFOMg1PT6sv4eFVOuV7L5XP86tw/j2te3OMlJ72H0JXgRfi/CIMXl0FZsTNKhOupXOH4FfpUyZ8c3cKs3PqMhBzl4FChGvxy21h+ixODh+FWfJF+HVvg+F80ah7EwzXhJB9EPIPQv5ByD8I+Qch/yDkH4T8g5B/EFqQvFbuxy0WShX2+2GYfvqUUmmY1b+U/a2IZEuFMoPI+Dwe7ZJJr/NerzeZJEl7tx0No5/TczduiTT7R4VD2SiU/ZnsDpOBl1sQDA6TXauQaJ9QqfhnEuTrvopV0XiWCaVqTHdkXjaRzIRSHscJncdOKFUcTe7yebz2UiWm9MOP4xyG/rbg5Mlc2O/27p5ATkI5m5bxeWyOQzmLSgKZzKFMh+V8XOZQimHJGWQzh9Gq9BSyEMpNiVXiTwyEstvRADKYQ9loawA5CMNIB8hAqOLSp9GPrBfOtPZRBnMYdvWA9s9hePf1ILM5DM+6U2i7UN33kcWt7Baqhc67GQ5zGI40lwrbhbLV0wVaLgyn2jup5cehGukDrZ5D2dJdDC/ZLFQLncsmFsLxHZf2weBw+X7t73yLhXJL5vXaw80ibjW//V3x69QmpF/6TqKlCEOl5K2KX6g2oTrSTjSr0TFUOo/11CeknWgGY1F4pOVXn5C03geR9sOR9QnHlDelO6H93Fl9ZxrKJ/mdheYuKuoUUt6ztR/wAG996yFhOVyNQ/3XqUsom7ti4WGpv5PaLew1H/B8a23CFkGYPGAKaxQS3rTtHnAYWi0MRs4Lh84LIwgpQWgqCCGkB6GpIISQHoSmghBCehCaCkII6UFoKgiZCNW/C78VfyIcRLOcEd6rWdjo5rQovi8xGB3zRsjG6NYrVMtOXoR7TQa5A2S1CbuxSaH2Lc6FJTPXhVvnhVHfdeHZ+eOwS1guWAuDuN67vswLD03CZrAWJpTNYC3c1fyuzbxw6Lxw7Lxw6rowWFBuKOIsPBxdF05814VtyoLPWrglbQZn4ZB05yJn4dh1YUBaDjkLB7Tb3BkLe0vX99KEcv3LWrhruC6kLYechbTlkLEwIF0dchYOaMshY+Hh7LpwQlsOGQsT0tUhZ2Gb+FCUSeHx5hP01wjfkB5yfrwTETfD6Pf4N56f//McvU+6UyFvBBuEN5+g//wN64TH8YOonzOCFcKcHLnbJCcIIaQHoakghJAehKaCEEJ6EJoKQgjpQWgqCCGkB6GpIISQHoSmghBCehCaCkII6UFoKgghpAehqSCEkB6EpoIQQnoQmgpCCOlBaCoIIaQHoakghJAehKaCEEJ6EJoKQgjpQWgqCCGkB6GpIISQ3v8g9B8wyv1VJ2yJlwf8v8n3V5lQLsVrqj9MiReuSphuxN5tYbgW3qmO3bQqoYxXwntyWZj+8IS32tSwn1YkTN9WmdCbn6onViNMl3vvIvT21RMrEabLtfch9OYbVfHBWIFQpt/33lXorZ6W/bRKpGmhVP34x8evExPX8fbPL36jsppx2wuKimTZ4f2X53XwCfsNE8N+WABDbt8AAAAASUVORK5CYII=" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Facebook</h4>
+            <p class="card-text">qeuqeyuyoidyasodhioshdosad</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Twitter</h4>
+            <p class="card-text">qeuqeyuyoidyasodhioshdosad</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Instagram</h4>
+            <p class="card-text">qeuqeyuyoidyasodhioshdosad</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Whatsapp</h4>
+                <p class="card-text">qeuqeyuyoidyasodhioshdosad</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+      </div>
+
+        <script type="text/javascript">
+           
+            
+        </script>
+</body>
+</html>
